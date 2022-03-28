@@ -71,7 +71,7 @@ function gotResult(error,results) {
     else {
         console.log(results);
         document.getElementById("mysketch_name").innerHTML=results[0].label;
-        confidence=Math.round(result[0].confidence*100)+'%';
+        confidence=Math.round(results[0].confidence*100)+'%';
         document.getElementById("confidence").innerHTML=confidence;
           }
 }
